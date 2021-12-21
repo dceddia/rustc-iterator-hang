@@ -31,6 +31,8 @@ where
     f: F,
 }
 
+// Comment out this section to unblock the compiler
+/* */
 impl<T, Cond, F> Iterator for OnChange<T, Cond, F>
 where
     F: Fn((Option<Self::Item>, Option<Self::Item>)) -> Option<Self::Item>,
@@ -41,6 +43,7 @@ where
         todo!()
     }
 }
+/* */
 
 fn main() {
     println!("Hello, world!");
